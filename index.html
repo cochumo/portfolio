@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamoru's portfolio</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script src="iscroll-master/build/iscroll.js"></script>
+  <script src="drawer-master/dist/js/drawer.min.js"></script>
+  <link rel="stylesheet" href="drawer-master/dist/css/drawer.min.css">
+  <script src="js/modernizr.js"></script>
+  <script src="js/html5shiv.js"></script>
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  <script>
+    $(document).ready(function() {
+      $('main,footer').fadeIn(2000);
+    });
+  </script>
+</head>
+
+<body class="drawer drawer--right">
+  <header class="header">
+    <h1 class="header-logo">
+        <a href="index.html"><img src="images/common/logo.png" alt="WebデザイナーMamoruのポートフォリオ"></a>
+      </h1>
+    <!-- /.header-logo -->
+    <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+    <!-- /.drawer-toggle drawer-hamburger -->
+    <div class="header-list drawer-nav" role="navigation">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.header-list -->
+  </header>
+  <!-- /.header -->
+  <main class="main">
+    <div class="about">
+      <div class="image-box-left">
+        <img class="image2" src="images/top/img2.jpg" alt="イメージ2">
+        <a class="responsive" href="about.html"><h2>About</h2></a>
+      </div>
+      <!-- /.image-box-left -->
+      <a class="about-content" href="about.html">
+        <h2 class="container">About</h2>
+      </a>
+      <!-- /.about-content -->
+    </div>
+    <!-- /.about -->
+    <div class="work">
+      <div class="image-box-right">
+        <img class="image3" src="images/top/img3.jpg" alt="イメージ3">
+        <a class="responsive" href="work.html"><h2>Work</h2></a>
+      </div>
+      <!-- /.image-box-right -->
+      <a class="work-content" href="work.html">
+        <h2 class="container">Work</h2>
+      </a>
+      <!-- /.work-content -->
+    </div>
+    <!-- /.work -->
+    <div class="contact">
+      <div class="image-box-left">
+        <img class="image4" src="images/top/img4.jpg" alt="イメージ4">
+        <a class="responsive" href="contact.html"><h2>Contact</h2></a>
+      </div>
+      <!-- /.image-box-left -->
+      <a class="contact-content" href="contact.html">
+        <h2 class="container">Contact</h2>
+      </a>
+      <!-- /.contact-content -->
+    </div>
+    <!-- /.contact -->
+  </main>
+  <!--  /.main -->
+  <footer class="footer">
+    <div class="footer-list">
+      <ul>
+        <li><a href="about.html">about</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </div>
+    <!-- /.footer-list -->
+    <div class="copyright">
+      <p>&copy; mamoru igamoto</p>
+    </div> <!-- /copyright -->
+  </footer>
+  <!--  .footer end -->
+  <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+  </script>
+</body>
+
+</html>
