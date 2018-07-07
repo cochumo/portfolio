@@ -1,0 +1,129 @@
+/* レスポシブ */
+
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css');
+
+@media (max-width: 1280px) {
+  .main {
+    margin: 130px 0 0 0;
+    /*標準でmarginを指定しているから､あえてmargin-topじゃない*/
+  }
+}
+
+@media (max-width: 960px) {
+  .about-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .profile p {
+    margin-right: 70px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    height: 100px;
+  }
+  .header-logo img {
+    height: 70px;
+  }
+  .main {
+    margin: 110px 0 0 0;
+    /*標準でmarginを指定しているから､あえてmargin-topじゃない*/
+  }
+  .about-content, .work-content, .contact-content, .about, .work, .contact {
+    height: 300px;
+  }
+  .footer-list li {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-right: 40px
+  }
+  .image-box-left {
+    height: 300px;
+  }
+  .image-box-right {
+    height: 300px;
+  }
+  .drawer-toggle {
+    margin: 20px;
+  }
+  .profile h3 {
+    margin-left: 0;
+  }
+  .profile p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .main h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-content, .work-content, .contact-content {
+    display: none;
+  }
+  .image-box-left, .image-box-right {
+    width: 100%;
+  }
+  .image-box-left img {
+    position: relative;
+    opacity: 0.85;
+  }
+  .image-box-right img {
+    position: relative;
+    opacity: 0.7;
+  }
+  .image-box-left h2 {
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-shadow: 3px 5px 3px #808080;
+  }
+  .image-box-right h2 {
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-shadow: 3px 5px 1px #808080;
+  }
+  .about-main {
+    margin: 180px 0 0;
+  }
+  .work-main {
+    margin: 180px 0 100px 0;
+  }
+  .contact-main {
+    margin: 180px 0 0;
+  }
+  .about-chunk img {
+    width: 100%;
+  }
+  .profile h3 {
+    font-size: 25px;
+  }
+  .main h2 {
+    font-size: 80px;
+  }
+  .footer {
+    height: 50px;
+  }
+  .footer-list {
+    display: none;
+  }
+}

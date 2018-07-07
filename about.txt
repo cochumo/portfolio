@@ -1,0 +1,68 @@
+自己紹介
+伊賀本　衛と申します。
+経歴
+幼少の頃から自動車が好きで高校で自動車科に入り整備士になりたいと思っていたのですが､不合格になってしまい補欠合格で電気科に進むも電気系に就職せず自動車関連工場に就職｡
+//就職してからは､好きだった車で毎晩ドライブに行き､2台目にはスポーツカーを購入し毎週末は朝まで峠を走ったりしていました｡//
+今後､現在の約半分の仕事がＡＩによってなくなるという時代で生き残っていくためには"自分にスキルをつけ､そのスキルを使って仕事をする"という事が重要と考えている｡その中でプログラミングの将来性に気づき､スキルさえあれば学歴の重要性の低さ､学習環境がよければ良いほどスキル習得に時間を無駄にすることがない､小中学校では今後プロブラミング教育の必修化が検討されており､国家戦略的にプログラミングができる人が優位な位置に立つことを推測し､2018年3月プログラミングの勉強を開始しました｡
+
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+/* Positioning */
+
+main {
+  margin-top: 20%;
+}
+
+.circle, .circle-text {
+  position: absolute;
+}
+
+.circle-text {
+  font: 50px/1.2 'Courgette', cursive;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  padding-bottom: 70px;
+}
+
+.circle {
+  position: absolute;
+  width: 280px;
+  height: 300px;
+  mix-blend-mode: multiply;
+  top: 0;
+}
+
+.circle-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Circles */
+
+.circle-1 {
+  background: #f66;
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  animation: border-animation 6s infinite linear;
+}
+.circle-2 {
+  background: #f92;
+  border-radius: 80% 30% 50% 50%/50%;
+  animation: border-animation 4s infinite linear;
+}
+.circle-3 {
+  background: #fc2;
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+  animation: border-animation 3s infinite linear;
+}
+
+/* Animation */
+@keyframes border-animation {
+  to { transform: rotate(360deg); }
+}

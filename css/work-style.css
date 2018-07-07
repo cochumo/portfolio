@@ -1,0 +1,60 @@
+
+.work-main {
+  margin: 250px 0 100px 0;
+}
+
+.circle, .circle-text {
+  position: absolute;
+}
+
+.circle-text {
+  font: 50px/1.2 'Courgette', cursive;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  margin: auto;
+}
+
+.circle {
+  position: absolute;
+  width: 280px;
+  height: 300px;
+  mix-blend-mode: multiply;
+  top: 0;
+  margin: auto;
+}
+
+.circle-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* Circles */
+
+.circle-1 {
+  background: #f66;
+  border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+  animation: border-animation 6s infinite linear;
+}
+.circle-2 {
+  background: #f92;
+  border-radius: 80% 30% 50% 50%/50%;
+  animation: border-animation 4s infinite linear;
+}
+.circle-3 {
+  background: #fc2;
+  border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+  animation: border-animation 3s infinite linear;
+}
+
+/* Animation */
+@keyframes border-animation {
+  to { transform: rotate(360deg); }
+}
