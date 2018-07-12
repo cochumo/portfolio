@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 @import url('https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 
 @media (max-width: 1280px) {
   .main {
@@ -19,6 +20,9 @@
   .profile p {
     margin-right: 70px;
     text-align: center;
+  }
+  .hero-section h1 {
+    font-size: 50px;
   }
 }
 
@@ -60,6 +64,9 @@
   }
   .main h2 {
     font-size: 50px;
+  }
+  .hero-section h1 {
+    font-size: 35px;
   }
 }
 
@@ -119,6 +126,9 @@
   }
   .main h2 {
     font-size: 80px;
+  }
+  .hero-section h1 {
+    font-size: 25px;
   }
   .footer {
     height: 50px;
